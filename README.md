@@ -1,58 +1,59 @@
 <h1>Active Directory Home Lab</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<!--### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)-->
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
-
+<p>
+  This project showcases my skills in setting up an Active Directory (AD) home lab using Windows Server 2019 and VirtualBox. Additionally, it features a PowerShell script for bulk user creation in AD, creating 1000 users for testing and demonstration purposes.
+</p>
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+<ul>
+  <li><b>PowerShell</b></li>
+  <li><b>Active Directory</b></li>
+  <li><b>VirtualBox</b></li>
+</ul>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+<ul>
+  <li><b>Windows 10</b></li>
+  <li><b>Windows Server 2019</b></li>
+</ul>
 
-<h2>Program walk-through:</h2>
+<h2>Program Walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <strong>1. VirtualBox Setup</strong> <br/>
+  - Install and configure VirtualBox on the host machine. <br/>
+  - Create virtual machines for Windows Server 2019 and Windows 10 with specified settings.
+  <br />
+  <br />
+  <strong>2. Windows Server 2019 Configuration</strong> <br/>
+  - Install Active Directory using PowerShell. <br/>
+  - Promote the server to a domain controller with a specified domain name and DNS installation.
+  <br />
+  <br />
+  <strong>3. Windows 10 Configuration</strong> <br/>
+  - Join the Windows 10 virtual machine to the created domain. <br/>
+  - Verify the successful connection to the Active Directory domain.
+  <br />
+  <br />
+  <strong>4. Bulk User Creation</strong> <br/>
+  - Included PowerShell script creates 1000 users with unique usernames and default passwords. <br/>
+  - Users are generated with realistic names using a random name generation function.
+  <br />
+  <br />
+  <strong>5. Screenshots and Comments</strong> <br/>
+  - Visual representation of critical steps in the "Screenshots" folder. <br/>
+  - Detailed comments providing context and insights for each step.
 </p>
 
-<!--
- ```diff
+<!--```diff
 - text in red
 + text in green
 ! text in orange
 # text in gray
 @@ text in purple (and bold)@@
-```
---!>
+```-->
