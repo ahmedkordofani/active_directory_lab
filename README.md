@@ -50,6 +50,10 @@
   - Detailed comments providing context and insights for each step.
 </p>
 
+[![ACTIVE DIRECTORY HOME LAB](https://img.youtube.com/Mo4wBUCzg0o//0.jpg)](https://www.youtube.com/watch?v=Mo4wBUCzg0o)
+
+
+
 <!--```diff
 - text in red
 + text in green
