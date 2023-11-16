@@ -42,7 +42,7 @@ This project showcases my skills in setting up an Active Directory (AD) home lab
    - Verify the successful connection by checking the IP configuration on the Windows 10 machine. The IP should be within the DHCP scope defined on the domain controller.
 
 
-[![Video](https://img.youtube.com/vi/Mo4wBUCzg0o/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mo4wBUCzg0o)
+[![Video](https://img.youtube.com/vi/4SLPpQJ_OSk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4SLPpQJ_OSk)
 
 
 
