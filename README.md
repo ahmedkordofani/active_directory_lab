@@ -1,56 +1,49 @@
-<h1>Active Directory Home Lab</h1>
+# Active Directory Home Lab
 
-<!--### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)-->
+## Description
 
-<h2>Description</h2>
-<p>
-  This project showcases my skills in setting up an Active Directory (AD) home lab using Windows Server 2019 and VirtualBox. Additionally, it features a PowerShell script for bulk user creation in AD, creating 1000 users for testing and demonstration purposes.
-</p>
+This project showcases my skills in setting up an Active Directory (AD) home lab using Windows Server 2019 and VirtualBox. Additionally, it features a PowerShell script for bulk user creation in AD, creating 1000 users for testing and demonstration purposes.
 
-<h2>Languages and Utilities Used</h2>
+## Languages and Utilities Used
 
-<ul>
-  <li><b>PowerShell</b></li>
-  <li><b>Active Directory</b></li>
-  <li><b>VirtualBox</b></li>
-</ul>
+- PowerShell
+- Active Directory
+- VirtualBox
 
-<h2>Environments Used </h2>
+## Environments Used
 
-<ul>
-  <li><b>Windows 10</b></li>
-  <li><b>Windows Server 2019</b></li>
-</ul>
+- Windows 10
+- Windows Server 2019
 
-<h2>Program Walk-through:</h2>
+## Setting Up a DHCP Server on Domain Controller and Connecting Client Machine
 
-<p align="center">
-  <strong>1. VirtualBox Setup</strong> <br/>
-  - Install and configure VirtualBox on the host machine. <br/>
-  - Create virtual machines for Windows Server 2019 and Windows 10 with specified settings.
-  <br />
-  <br />
-  <strong>2. Windows Server 2019 Configuration</strong> <br/>
-  - Install Active Directory using PowerShell. <br/>
-  - Promote the server to a domain controller with a specified domain name and DNS installation.
-  <br />
-  <br />
-  <strong>3. Windows 10 Configuration</strong> <br/>
-  - Join the Windows 10 virtual machine to the created domain. <br/>
-  - Verify the successful connection to the Active Directory domain.
-  <br />
-  <br />
-  <strong>4. Bulk User Creation</strong> <br/>
-  - Included PowerShell script creates 1000 users with unique usernames and default passwords. <br/>
-  - Users are generated with realistic names using a random name generation function.
-  <br />
-  <br />
-  <strong>5. Screenshots and Comments</strong> <br/>
-  - Visual representation of critical steps in the "Screenshots" folder. <br/>
-  - Detailed comments providing context and insights for each step.
-</p>
+### Program Walk-through:
 
-[![ACTIVE DIRECTORY HOME LAB](https://img.youtube.com/Mo4wBUCzg0o//0.jpg)](https://www.youtube.com/watch?v=Mo4wBUCzg0o)
+1. **VirtualBox Setup**
+   - Install and configure VirtualBox on your host machine.
+   - Create virtual machines for Windows Server 2019 and Windows 10 with specified settings.
+
+2. **Windows Server 2019 Configuration**
+   - Set up Active Directory on the domain controller (Windows Server 2019). Refer to [insert link to your Active Directory setup guide].
+   - Promote the server to a domain controller with a specified domain name and DNS installation.
+
+3. **DHCP Server Configuration**
+   - Open the Server Manager on the domain controller.
+   - Select "Manage" and click on "Add Roles and Features."
+   - Choose "DHCP Server" in the role installation wizard.
+   - Complete the DHCP server installation process, ensuring to configure the DHCP scope with relevant details (IP range, subnet mask, gateway, and DNS server).
+
+4. **Windows 10 Configuration**
+   - On the Windows 10 virtual machine, open the Network and Sharing Center.
+   - Set the network location to "Work network" to enable DHCP.
+   - Confirm the assignment of a dynamic IP address from the DHCP server.
+
+5. **Verification**
+   - Verify the successful connection by checking the IP configuration on the Windows 10 machine. The IP should be within the DHCP scope defined on the domain controller.
+
+
+[![Video](https://img.youtube.com/vi/Mo4wBUCzg0o/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mo4wBUCzg0o)
+
 
 
 
